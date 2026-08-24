@@ -1,0 +1,54 @@
+workflows:
+  ios-native:
+    name: ArtForDogs SMS Manager
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+    environment:
+      xcode: latest
+      vars:
+        XCODE_PROJECT: "ios/ArtForDogs SMS Manager/ArtForDogs SMS Manager.xcodeproj"
+        XCODE_SCHEME: "ArtForDogs SMS Manager"
+        BUNDLE_ID: "com.artfordogs.smsmanager"
+    scripts:
+      - name: Show project
+        script: |
+          xcodebuild -project "$CM_BUILD_DIR/$XCODE_PROJECT" -list
+      - name: Build unsigned iOS app
+        script: |
+          xcodebuild \
+            -project "$CM_BUILD_DIR/$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
+            -sdk iphoneos \
+            -configuration Release \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
+    artifacts:
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/Products/Release-iphoneos/*.app
+      - /tmp/xcodebuild_logs/*.log
+
+  ios-signed:
+    name: ArtForDogs SMS Manager - Signed IPA
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+    environment:
+      ios_signing:
+        distribution_type: development
+        bundle_identifier: com.artfordogs.smsmanager
+      vars:
+        XCODE_PROJECT: "ios/ArtForDogs SMS Manager/ArtForDogs SMS Manager.xcodeproj"
+        XCODE_SCHEME: "ArtForDogs SMS Manager"
+        BUNDLE_ID: "com.artfordogs.smsmanager"
+      xcode: latest
+    scripts:
+      - name: Set up code signing
+        script: |
+          xcode-project use-profiles
+      - name: Build signed IPA
+        script: |
+          xcode-project build-ipa \
+            --project "$CM_BUILD_DIR/$XCODE_PROJECT" \
+            --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
