@@ -1,0 +1,210 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {
+ };
+ objectVersion = 77;
+ objects = {
+
+/* Begin PBXBuildFile section */
+        A10000010000000000000001 /* ArtForDogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000001 /* ArtForDogsApp.swift */; };
+        A10000010000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000002 /* ContentView.swift */; };
+        A10000010000000000000003 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000010000000000000003 /* APIClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+        B10000010000000000000001 /* ArtForDogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtForDogsApp.swift; sourceTree = "<group>"; };
+        B10000010000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+        B10000010000000000000003 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+        B10000010000000000000004 /* ArtForDogs SMS Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ArtForDogs SMS Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+        B10000010000000000000005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+        C10000010000000000000001 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+        C10000010000000000000002 /* ArtForDogs SMS Manager */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = D10000010000000000000002 /* Build configuration list for PBXNativeTarget "ArtForDogs SMS Manager" */;
+            buildPhases = (
+                C10000010000000000000003 /* Sources */,
+                C10000010000000000000001 /* Frameworks */,
+                C10000010000000000000004 /* Resources */,
+            );
+            buildRules = ();
+            dependencies = ();
+            name = "ArtForDogs SMS Manager";
+            productName = "ArtForDogs SMS Manager";
+            productReference = B10000010000000000000004 /* ArtForDogs SMS Manager.app */;
+            productType = "com.apple.product-type.application";
+        };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+        E10000010000000000000001 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                BuildIndependentTargetsInParallel = 1;
+                LastUpgradeCheck = 2600;
+                TargetAttributes = {
+                    C10000010000000000000002 = {
+                        CreatedOnToolsVersion = 26.0;
+                    };
+                };
+            };
+            buildConfigurationList = D10000010000000000000001 /* Build configuration list for PBXProject "ArtForDogs SMS Manager" */;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = F10000010000000000000001;
+            productRefGroup = F10000010000000000000002 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                C10000010000000000000002 /* ArtForDogs SMS Manager */,
+            );
+        };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+        C10000010000000000000004 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+        C10000010000000000000003 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                A10000010000000000000001 /* ArtForDogsApp.swift in Sources */,
+                A10000010000000000000002 /* ContentView.swift in Sources */,
+                A10000010000000000000003 /* APIClient.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXGroup section */
+        F10000010000000000000001 = {
+            isa = PBXGroup;
+            children = (
+                F10000010000000000000003 /* ArtForDogs SMS Manager */,
+                F10000010000000000000002 /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        F10000010000000000000002 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                B10000010000000000000004 /* ArtForDogs SMS Manager.app */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        F10000010000000000000003 /* ArtForDogs SMS Manager */ = {
+            isa = PBXGroup;
+            children = (
+                B10000010000000000000001 /* ArtForDogsApp.swift */,
+                B10000010000000000000002 /* ContentView.swift */,
+                B10000010000000000000003 /* APIClient.swift */,
+                B10000010000000000000005 /* Info.plist */,
+            );
+            path = ".";
+            sourceTree = "<group>";
+        };
+/* End PBXGroup section */
+
+/* Begin XCBuildConfiguration section */
+        D10000010000000000000001 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                SWIFT_VERSION = 5.0;
+            };
+            name = Debug;
+        };
+        D10000010000000000000002 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+                SWIFT_VERSION = 5.0;
+            };
+            name = Release;
+        };
+        D10000010000000000000003 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                PRODUCT_BUNDLE_IDENTIFIER = com.artfordogs.smsmanager;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                INFOPLIST_FILE = "Info.plist";
+                SWIFT_VERSION = 5.0;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = "";
+                GENERATE_INFOPLIST_FILE = NO;
+            };
+            name = Debug;
+        };
+        D10000010000000000000004 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                PRODUCT_BUNDLE_IDENTIFIER = com.artfordogs.smsmanager;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                INFOPLIST_FILE = "Info.plist";
+                SWIFT_VERSION = 5.0;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = "";
+                GENERATE_INFOPLIST_FILE = NO;
+            };
+            name = Release;
+        };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+        D10000010000000000000001 /* Build configuration list for PBXProject "ArtForDogs SMS Manager" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                D10000010000000000000001 /* Debug */,
+                D10000010000000000000002 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        D10000010000000000000002 /* Build configuration list for PBXNativeTarget "ArtForDogs SMS Manager" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                D10000010000000000000003 /* Debug */,
+                D10000010000000000000004 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+/* End XCConfigurationList section */
+ };
+ rootObject = E10000010000000000000001 /* Project object */;
+}
