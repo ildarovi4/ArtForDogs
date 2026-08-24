@@ -130,7 +130,7 @@
 /* End PBXGroup section */
 
 /* Begin XCBuildConfiguration section */
-        D10000010000000000000001 /* Debug */ = {
+        D10000010000000000000005 /* Debug */ = {
             isa = XCBuildConfiguration;
             buildSettings = {
                 ALWAYS_SEARCH_USER_PATHS = NO;
@@ -141,7 +141,7 @@
             };
             name = Debug;
         };
-        D10000010000000000000002 /* Release */ = {
+        D10000010000000000000006 /* Release */ = {
             isa = XCBuildConfiguration;
             buildSettings = {
                 ALWAYS_SEARCH_USER_PATHS = NO;
@@ -189,9 +189,9 @@
         D10000010000000000000001 /* Build configuration list for PBXProject "ArtForDogs SMS Manager" */ = {
             isa = XCConfigurationList;
             buildConfigurations = (
-                D10000010000000000000001 /* Debug */,
-                D10000010000000000000002 /* Release */,
-            );
+    D10000010000000000000005 /* Debug */,
+    D10000010000000000000006 /* Release */,
+);
             defaultConfigurationIsVisible = 0;
             defaultConfigurationName = Release;
         };
